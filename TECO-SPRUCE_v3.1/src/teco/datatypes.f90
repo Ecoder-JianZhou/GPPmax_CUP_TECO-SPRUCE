@@ -168,15 +168,15 @@ module datatypes
         real(8) :: s_ved
         real(8) :: s_jea
         real(8) :: s_jed
-        real(8) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8
+        real(8) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8, s_vea_9
         real(8) :: s_ved_1, s_ved_2, s_ved_3, s_ved_4, s_ved_5, s_ved_6, s_ved_7, s_ved_8
-        real(8) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8
-        real(8) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8
-        real(8) :: Q10_1, Q10_2, Q10_3, Q10_4, Q10_5, Q10_6, Q10_7, Q10_8
-        real(8) :: f_rg_1, f_rg_2, f_rg_3, f_rg_4, f_rg_5, f_rg_6, f_rg_7, f_rg_8
-        real(8) :: fn2r_1, fn2r_2, fn2r_3, fn2r_4, fn2r_5, fn2r_6, fn2r_7, fn2r_8
+        real(8) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8, Entrpy_9
+        real(8) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8, Vcmax0_9
+        real(8) :: Q10_1, Q10_2, Q10_3, Q10_4, Q10_5, Q10_6, Q10_7, Q10_8, Q10_9
+        real(8) :: f_rg_1, f_rg_2, f_rg_3, f_rg_4, f_rg_5, f_rg_6, f_rg_7, f_rg_8, f_rg_9
+        real(8) :: fn2r_1, fn2r_2, fn2r_3, fn2r_4, fn2r_5, fn2r_6, fn2r_7, fn2r_8, fn2r_9
         real(8) :: s_npp_1, s_npp_2, s_npp_3, s_npp_4, s_npp_5, s_npp_6, s_npp_7, s_npp_8, s_npp_9
-        real(8) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8
+        real(8) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8, fn2l_9
         ! add in plant growth process
         real(8) :: hmax     ! m
         real(8) :: hl0      ! m2/kg C
@@ -305,6 +305,7 @@ module datatypes
         real(8) :: Q10rh_6
         real(8) :: Q10rh_7
         real(8) :: Q10rh_8
+        real(8) :: Q10rh_9
         real(8) :: Q10pro_1
         real(8) :: Q10pro_2
         real(8) :: Q10pro_3
@@ -313,6 +314,7 @@ module datatypes
         real(8) :: Q10pro_6
         real(8) :: Q10pro_7
         real(8) :: Q10pro_8
+        real(8) :: Q10pro_9
         real(8) :: Tpro_me_1
         real(8) :: Tpro_me_2
         real(8) :: Tpro_me_3
@@ -321,6 +323,7 @@ module datatypes
         real(8) :: Tpro_me_6
         real(8) :: Tpro_me_7
         real(8) :: Tpro_me_8
+        real(8) :: Tpro_me_9
         real(8) :: Tref_rh_1
         real(8) :: Tref_rh_2
         real(8) :: Tref_rh_3
@@ -617,9 +620,9 @@ module datatypes
         real(8) :: par_decay_m
         ! ------------------------------
         ! add for annual different parameters
-        real(8) :: Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8
-        real(8) :: Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8
-        real(8) :: Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8
+        real(8) :: Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8, Q10rh_9
+        real(8) :: Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8, Q10pro_9
+        real(8) :: Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8, Tpro_me_9
         real(8) :: Tref_rh_1, Tref_rh_2, Tref_rh_3, Tref_rh_4, Tref_rh_5, Tref_rh_6, Tref_rh_7, Tref_rh_8
     end type in_site_params
 
@@ -659,15 +662,15 @@ module datatypes
         real(8) :: s_ved
         real(8) :: s_jea
         real(8) :: s_jed
-        real(8) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8
+        real(8) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8, s_vea_9
         real(8) :: s_ved_1, s_ved_2, s_ved_3, s_ved_4, s_ved_5, s_ved_6, s_ved_7, s_ved_8
-        real(8) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8
-        real(8) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8
-        real(8) :: Q10_1, Q10_2, Q10_3, Q10_4, Q10_5, Q10_6, Q10_7, Q10_8
-        real(8) :: f_rg_1, f_rg_2, f_rg_3, f_rg_4, f_rg_5, f_rg_6, f_rg_7, f_rg_8
-        real(8) :: fn2r_1, fn2r_2, fn2r_3, fn2r_4, fn2r_5, fn2r_6, fn2r_7, fn2r_8
+        real(8) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8, Entrpy_9
+        real(8) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8, Vcmax0_9
+        real(8) :: Q10_1, Q10_2, Q10_3, Q10_4, Q10_5, Q10_6, Q10_7, Q10_8, Q10_9
+        real(8) :: f_rg_1, f_rg_2, f_rg_3, f_rg_4, f_rg_5, f_rg_6, f_rg_7, f_rg_8, f_rg_9
+        real(8) :: fn2r_1, fn2r_2, fn2r_3, fn2r_4, fn2r_5, fn2r_6, fn2r_7, fn2r_8, fn2r_9
         real(8) :: s_npp_1, s_npp_2, s_npp_3, s_npp_4, s_npp_5, s_npp_6, s_npp_7, s_npp_8, s_npp_9
-        real(8) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8
+        real(8) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8, fn2l_9
         ! add in plant growth process
         real(8) :: hmax 
         real(8) :: hl0 
@@ -934,13 +937,13 @@ module datatypes
             &   in_params_vals%st_params%pox, &
             &   in_params_vals%st_params%Q10rh_1, in_params_vals%st_params%Q10rh_2, in_params_vals%st_params%Q10rh_3, &
             &   in_params_vals%st_params%Q10rh_4, in_params_vals%st_params%Q10rh_5, in_params_vals%st_params%Q10rh_6, &
-            &   in_params_vals%st_params%Q10rh_7, in_params_vals%st_params%Q10rh_8, &
+            &   in_params_vals%st_params%Q10rh_7, in_params_vals%st_params%Q10rh_8, in_params_vals%st_params%Q10rh_9, &
             &   in_params_vals%st_params%Q10pro_1, in_params_vals%st_params%Q10pro_2, in_params_vals%st_params%Q10pro_3, &
             &   in_params_vals%st_params%Q10pro_4, in_params_vals%st_params%Q10pro_5, in_params_vals%st_params%Q10pro_6, &
-            &   in_params_vals%st_params%Q10pro_7, in_params_vals%st_params%Q10pro_8, &
+            &   in_params_vals%st_params%Q10pro_7, in_params_vals%st_params%Q10pro_8, in_params_vals%st_params%Q10pro_9,&
             &   in_params_vals%st_params%Tpro_me_1, in_params_vals%st_params%Tpro_me_2, in_params_vals%st_params%Tpro_me_3, &
             &   in_params_vals%st_params%Tpro_me_4, in_params_vals%st_params%Tpro_me_5, in_params_vals%st_params%Tpro_me_6, &
-            &   in_params_vals%st_params%Tpro_me_7, in_params_vals%st_params%Tpro_me_8, &
+            &   in_params_vals%st_params%Tpro_me_7, in_params_vals%st_params%Tpro_me_8, in_params_vals%st_params%Tpro_me_9, &
             &   in_params_vals%st_params%Tref_rh_1, in_params_vals%st_params%Tref_rh_2, in_params_vals%st_params%Tref_rh_3, &
             &   in_params_vals%st_params%Tref_rh_4, in_params_vals%st_params%Tref_rh_5, in_params_vals%st_params%Tref_rh_6, &
             &   in_params_vals%st_params%Tref_rh_7, in_params_vals%st_params%Tref_rh_8)
@@ -996,23 +999,29 @@ module datatypes
             &   in_sp_params%f_rg, in_sp_params%s_vea, in_sp_params%s_ved, in_sp_params%s_jea, in_sp_params%s_jed, &
             &   in_sp_params%s_vea_1, in_sp_params%s_vea_2, in_sp_params%s_vea_3, in_sp_params%s_vea_4, &
             &   in_sp_params%s_vea_5, in_sp_params%s_vea_6, in_sp_params%s_vea_7, in_sp_params%s_vea_8, &
+            &   in_sp_params%s_vea_9, &
             &   in_sp_params%s_ved_1, in_sp_params%s_ved_2, in_sp_params%s_ved_3, in_sp_params%s_ved_4, &
             &   in_sp_params%s_ved_5, in_sp_params%s_ved_6, in_sp_params%s_ved_7, in_sp_params%s_ved_8, &
             &   in_sp_params%Entrpy_1, in_sp_params%Entrpy_2, in_sp_params%Entrpy_3, in_sp_params%Entrpy_4, &
             &   in_sp_params%Entrpy_5, in_sp_params%Entrpy_6, in_sp_params%Entrpy_7, in_sp_params%Entrpy_8, &
+            &   in_sp_params%Entrpy_9, &
             &   in_sp_params%Vcmax0_1, in_sp_params%Vcmax0_2, in_sp_params%Vcmax0_3, in_sp_params%Vcmax0_4, &
             &   in_sp_params%Vcmax0_5, in_sp_params%Vcmax0_6, in_sp_params%Vcmax0_7, in_sp_params%Vcmax0_8, &
+            &   in_sp_params%Vcmax0_9, &
             &   in_sp_params%Q10_1, in_sp_params%Q10_2, in_sp_params%Q10_3, in_sp_params%Q10_4, &
             &   in_sp_params%Q10_5, in_sp_params%Q10_6, in_sp_params%Q10_7, in_sp_params%Q10_8, &
+            &   in_sp_params%Q10_9, &
             &   in_sp_params%f_rg_1, in_sp_params%f_rg_2, in_sp_params%f_rg_3, in_sp_params%f_rg_4, &
             &   in_sp_params%f_rg_5, in_sp_params%f_rg_6, in_sp_params%f_rg_7, in_sp_params%f_rg_8, &
+            &   in_sp_params%f_rg_9, &
             &   in_sp_params%fn2r_1, in_sp_params%fn2r_2, in_sp_params%fn2r_3, in_sp_params%fn2r_4, &
             &   in_sp_params%fn2r_5, in_sp_params%fn2r_6, in_sp_params%fn2r_7, in_sp_params%fn2r_8, &
+            &   in_sp_params%fn2r_9, &
             &   in_sp_params%s_npp_1,in_sp_params%s_npp_2,in_sp_params%s_npp_3,in_sp_params%s_npp_4,&
             &   in_sp_params%s_npp_5,in_sp_params%s_npp_6,in_sp_params%s_npp_7,in_sp_params%s_npp_8,&
             &   in_sp_params%s_npp_9, &
             &   in_sp_params%fn2l_1, in_sp_params%fn2l_2, in_sp_params%fn2l_3, in_sp_params%fn2l_4, &
-            &   in_sp_params%fn2l_5, in_sp_params%fn2l_6, in_sp_params%fn2l_7, in_sp_params%fn2l_8)
+            &   in_sp_params%fn2l_5, in_sp_params%fn2l_6, in_sp_params%fn2l_7, in_sp_params%fn2l_8, in_sp_params%fn2l_9)
     end subroutine init_spec_params
 
     subroutine init_spec_init_Values(in_spec, in_sp_init_vals)
@@ -1037,9 +1046,9 @@ module datatypes
         f_fast, f_slow, s_soil,&
         par_shcap_snow, par_condu_snow, par_condu_b, & !par_albedo_snow, 
         par_fsub, par_rho_snow, par_decay_m, pox, &
-        Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8, &
-        Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8, &
-        Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8, &
+        Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8, Q10rh_9, &
+        Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8, Q10pro_9,&
+        Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8,Tpro_me_9, &
         Tref_rh_1, Tref_rh_2, Tref_rh_3, Tref_rh_4, Tref_rh_5, Tref_rh_6, Tref_rh_7, Tref_rh_8)
         implicit none
         type(site_data_type), intent(inout) :: in_st
@@ -1053,9 +1062,9 @@ module datatypes
         real(8), intent(in) :: f_fast, f_slow, s_soil
         real(8), intent(in) :: par_shcap_snow, par_condu_snow, par_condu_b
         real(8), intent(in) :: par_fsub, par_rho_snow, par_decay_m, pox
-        real(8), intent(in) :: Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8
-        real(8), intent(in) :: Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8
-        real(8), intent(in) :: Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8
+        real(8), intent(in) :: Q10rh_1, Q10rh_2, Q10rh_3, Q10rh_4, Q10rh_5, Q10rh_6, Q10rh_7, Q10rh_8, Q10rh_9
+        real(8), intent(in) :: Q10pro_1, Q10pro_2, Q10pro_3, Q10pro_4, Q10pro_5, Q10pro_6, Q10pro_7, Q10pro_8, Q10pro_9
+        real(8), intent(in) :: Tpro_me_1, Tpro_me_2, Tpro_me_3, Tpro_me_4, Tpro_me_5, Tpro_me_6, Tpro_me_7, Tpro_me_8, Tpro_me_9
         real(8), intent(in) :: Tref_rh_1, Tref_rh_2, Tref_rh_3, Tref_rh_4, Tref_rh_5, Tref_rh_6, Tref_rh_7, Tref_rh_8
         in_st%lat          = lat
         in_st%lon          = lon
@@ -1098,6 +1107,7 @@ module datatypes
         in_st%Q10rh_6      = Q10rh_6
         in_st%Q10rh_7      = Q10rh_7
         in_st%Q10rh_8      = Q10rh_8
+        in_st%Q10rh_9      = Q10rh_9
         in_st%Q10pro_1     = Q10pro_1
         in_st%Q10pro_2     = Q10pro_2
         in_st%Q10pro_3     = Q10pro_3
@@ -1106,6 +1116,7 @@ module datatypes
         in_st%Q10pro_6     = Q10pro_6
         in_st%Q10pro_7     = Q10pro_7
         in_st%Q10pro_8     = Q10pro_8
+        in_st%Q10pro_9     = Q10pro_9
         in_st%Tpro_me_1    = Tpro_me_1
         in_st%Tpro_me_2    = Tpro_me_2
         in_st%Tpro_me_3    = Tpro_me_3
@@ -1114,6 +1125,7 @@ module datatypes
         in_st%Tpro_me_6    = Tpro_me_6
         in_st%Tpro_me_7    = Tpro_me_7
         in_st%Tpro_me_8    = Tpro_me_8
+        in_st%Tpro_me_9    = Tpro_me_9
         in_st%Tref_rh_1    = Tref_rh_1
         in_st%Tref_rh_2    = Tref_rh_2
         in_st%Tref_rh_3    = Tref_rh_3
@@ -1228,15 +1240,15 @@ module datatypes
         Tau_Leaf, Tau_Stem,  Tau_Root,    Q10,    Rl0,      Rs0,      Rr0, &
         JV,       Entrpy,    gddonset,    hmax,   hl0,      LAIMAX0,  la0,&
         fn2l, fn2r, s_cLeaf, s_cStem,   s_cRoot,  s_nsc, s_nsn, f_rg,s_vea,s_ved,s_jea,s_jed,&
-        s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8,&
+        s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8,s_vea_9,&
         s_ved_1, s_ved_2, s_ved_3, s_ved_4, s_ved_5, s_ved_6, s_ved_7, s_ved_8,&
-        Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8,&
-        Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8,&
-        Q10_1,   Q10_2,   Q10_3,   Q10_4,   Q10_5,   Q10_6,   Q10_7,   Q10_8, &
-        f_rg_1,  f_rg_2,  f_rg_3,  f_rg_4,  f_rg_5,  f_rg_6,  f_rg_7,  f_rg_8, &
-        fn2r_1,  fn2r_2,  fn2r_3,  fn2r_4,  fn2r_5,  fn2r_6,  fn2r_7,  fn2r_8, &
+        Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8,Entrpy_9,&
+        Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8,Vcmax0_9,&
+        Q10_1,   Q10_2,   Q10_3,   Q10_4,   Q10_5,   Q10_6,   Q10_7,   Q10_8,Q10_9, &
+        f_rg_1,  f_rg_2,  f_rg_3,  f_rg_4,  f_rg_5,  f_rg_6,  f_rg_7,  f_rg_8,f_rg_9, &
+        fn2r_1,  fn2r_2,  fn2r_3,  fn2r_4,  fn2r_5,  fn2r_6,  fn2r_7,  fn2r_8,fn2r_9, &
         s_npp_1, s_npp_2, s_npp_3, s_npp_4, s_npp_5, s_npp_6, s_npp_7, s_npp_8, s_npp_9, &
-        fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8)
+        fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8, fn2l_9)
         implicit none
         type(spec_data_type), intent(inout) :: in_spec
         integer, intent(in) :: stom_n
@@ -1252,15 +1264,15 @@ module datatypes
         real(8), intent(in) ::  hmax,    hl0,      LAIMAX0,  la0, fn2l, fn2r
         real(8), intent(in) :: s_cLeaf, s_cStem,   s_cRoot,  s_nsc, s_nsn, f_rg
         real(8), intent(in) :: s_vea, s_ved, s_jea, s_jed
-        real(8), intent(in) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8
+        real(8), intent(in) :: s_vea_1, s_vea_2, s_vea_3, s_vea_4, s_vea_5, s_vea_6, s_vea_7, s_vea_8, s_vea_9
         real(8), intent(in) :: s_ved_1, s_ved_2, s_ved_3, s_ved_4, s_ved_5, s_ved_6, s_ved_7, s_ved_8
-        real(8), intent(in) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8
-        real(8), intent(in) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8
-        real(8), intent(in) :: Q10_1,   Q10_2,   Q10_3,   Q10_4,   Q10_5,   Q10_6,   Q10_7,   Q10_8
-        real(8), intent(in) :: f_rg_1,  f_rg_2,  f_rg_3,  f_rg_4,  f_rg_5,  f_rg_6,  f_rg_7,  f_rg_8
-        real(8), intent(in) :: fn2r_1,  fn2r_2,  fn2r_3,  fn2r_4,  fn2r_5,  fn2r_6,  fn2r_7,  fn2r_8
+        real(8), intent(in) :: Entrpy_1, Entrpy_2, Entrpy_3, Entrpy_4, Entrpy_5, Entrpy_6, Entrpy_7, Entrpy_8, Entrpy_9
+        real(8), intent(in) :: Vcmax0_1, Vcmax0_2, Vcmax0_3, Vcmax0_4, Vcmax0_5, Vcmax0_6, Vcmax0_7, Vcmax0_8, Vcmax0_9
+        real(8), intent(in) :: Q10_1,   Q10_2,   Q10_3,   Q10_4,   Q10_5,   Q10_6,   Q10_7,   Q10_8,   Q10_9
+        real(8), intent(in) :: f_rg_1,  f_rg_2,  f_rg_3,  f_rg_4,  f_rg_5,  f_rg_6,  f_rg_7,  f_rg_8,  f_rg_9
+        real(8), intent(in) :: fn2r_1,  fn2r_2,  fn2r_3,  fn2r_4,  fn2r_5,  fn2r_6,  fn2r_7,  fn2r_8,  fn2r_9
         real(8), intent(in) :: s_npp_1, s_npp_2, s_npp_3, s_npp_4, s_npp_5, s_npp_6, s_npp_7, s_npp_8, s_npp_9
-        real(8), intent(in) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8
+        real(8), intent(in) :: fn2l_1, fn2l_2, fn2l_3, fn2l_4, fn2l_5, fn2l_6, fn2l_7, fn2l_8, fn2l_9
         in_spec%spec_name   = spec_name
         in_spec%pft_weight  = pft_weight
         ! species parameter sets
@@ -1305,6 +1317,7 @@ module datatypes
         in_spec%s_vea_6     = s_vea_6
         in_spec%s_vea_7     = s_vea_7
         in_spec%s_vea_8     = s_vea_8
+        in_spec%s_vea_9     = s_vea_9
         in_spec%s_ved_1     = s_ved_1
         in_spec%s_ved_2     = s_ved_2
         in_spec%s_ved_3     = s_ved_3
@@ -1321,6 +1334,7 @@ module datatypes
         in_spec%Entrpy_6     = Entrpy_6
         in_spec%Entrpy_7     = Entrpy_7
         in_spec%Entrpy_8     = Entrpy_8
+        in_spec%Entrpy_9     = Entrpy_9
         in_spec%Vcmax0_1     = Vcmax0_1
         in_spec%Vcmax0_2     = Vcmax0_2
         in_spec%Vcmax0_3     = Vcmax0_3
@@ -1329,6 +1343,7 @@ module datatypes
         in_spec%Vcmax0_6     = Vcmax0_6
         in_spec%Vcmax0_7     = Vcmax0_7
         in_spec%Vcmax0_8     = Vcmax0_8
+        in_spec%Vcmax0_9     = Vcmax0_9
         in_spec%Q10_1       = Q10_1
         in_spec%Q10_2       = Q10_2
         in_spec%Q10_3       = Q10_3
@@ -1337,6 +1352,7 @@ module datatypes
         in_spec%Q10_6       = Q10_6
         in_spec%Q10_7       = Q10_7
         in_spec%Q10_8       = Q10_8
+        in_spec%Q10_9       = Q10_9
         in_spec%f_rg_1      = f_rg_1
         in_spec%f_rg_2      = f_rg_2
         in_spec%f_rg_3      = f_rg_3
@@ -1345,6 +1361,7 @@ module datatypes
         in_spec%f_rg_6      = f_rg_6
         in_spec%f_rg_7      = f_rg_7
         in_spec%f_rg_8      = f_rg_8
+        in_spec%f_rg_9      = f_rg_9
         in_spec%fn2r_1     = fn2r_1
         in_spec%fn2r_2     = fn2r_2
         in_spec%fn2r_3     = fn2r_3
@@ -1353,6 +1370,7 @@ module datatypes
         in_spec%fn2r_6     = fn2r_6
         in_spec%fn2r_7     = fn2r_7
         in_spec%fn2r_8     = fn2r_8
+        in_spec%fn2r_9     = fn2r_9
         in_spec%s_npp_1    = s_npp_1
         in_spec%s_npp_2    = s_npp_2
         in_spec%s_npp_3    = s_npp_3
@@ -1370,6 +1388,7 @@ module datatypes
         in_spec%fn2l_6     = fn2l_6
         in_spec%fn2l_7     = fn2l_7
         in_spec%fn2l_8     = fn2l_8
+        in_spec%fn2l_9     = fn2l_9
         ! add in plant growth process
         in_spec%hmax        = hmax 
         in_spec%hl0         = hl0 

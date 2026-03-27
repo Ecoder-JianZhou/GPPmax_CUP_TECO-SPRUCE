@@ -274,6 +274,7 @@ module mcmc_mod
                 case ("Q10rh_6");  in_params_vals%st_params%Q10rh_6  = mcParams%st(i)%parval
                 case ("Q10rh_7");  in_params_vals%st_params%Q10rh_7  = mcParams%st(i)%parval
                 case ("Q10rh_8");  in_params_vals%st_params%Q10rh_8  = mcParams%st(i)%parval
+                case ("Q10rh_9");  in_params_vals%st_params%Q10rh_9  = mcParams%st(i)%parval
                 case ("Q10pro_1"); in_params_vals%st_params%Q10pro_1 = mcParams%st(i)%parval
                 case ("Q10pro_2"); in_params_vals%st_params%Q10pro_2 = mcParams%st(i)%parval
                 case ("Q10pro_3"); in_params_vals%st_params%Q10pro_3 = mcParams%st(i)%parval
@@ -282,6 +283,7 @@ module mcmc_mod
                 case ("Q10pro_6"); in_params_vals%st_params%Q10pro_6 = mcParams%st(i)%parval
                 case ("Q10pro_7"); in_params_vals%st_params%Q10pro_7 = mcParams%st(i)%parval
                 case ("Q10pro_8"); in_params_vals%st_params%Q10pro_8 = mcParams%st(i)%parval
+                case ("Q10pro_9"); in_params_vals%st_params%Q10pro_9 = mcParams%st(i)%parval
                 case ("Tpro_me_1"); in_params_vals%st_params%Tpro_me_1 = mcParams%st(i)%parval
                 case ("Tpro_me_2"); in_params_vals%st_params%Tpro_me_2 = mcParams%st(i)%parval
                 case ("Tpro_me_3"); in_params_vals%st_params%Tpro_me_3 = mcParams%st(i)%parval
@@ -290,6 +292,7 @@ module mcmc_mod
                 case ("Tpro_me_6"); in_params_vals%st_params%Tpro_me_6 = mcParams%st(i)%parval
                 case ("Tpro_me_7"); in_params_vals%st_params%Tpro_me_7 = mcParams%st(i)%parval
                 case ("Tpro_me_8"); in_params_vals%st_params%Tpro_me_8 = mcParams%st(i)%parval
+                case ("Tpro_me_9"); in_params_vals%st_params%Tpro_me_9 = mcParams%st(i)%parval
                 case ("Tref_rh_1"); in_params_vals%st_params%Tref_rh_1 = mcParams%st(i)%parval
                 case ("Tref_rh_2"); in_params_vals%st_params%Tref_rh_2 = mcParams%st(i)%parval
                 case ("Tref_rh_3"); in_params_vals%st_params%Tref_rh_3 = mcParams%st(i)%parval
@@ -350,6 +353,7 @@ module mcmc_mod
                     case ("s_vea_6");  in_params_vals%sp_params(i)%s_vea_6  = mcParams%sp(i)%var(j)%parval
                     case ("s_vea_7");  in_params_vals%sp_params(i)%s_vea_7  = mcParams%sp(i)%var(j)%parval
                     case ("s_vea_8");  in_params_vals%sp_params(i)%s_vea_8  = mcParams%sp(i)%var(j)%parval
+                    case ("s_vea_9");  in_params_vals%sp_params(i)%s_vea_9  = mcParams%sp(i)%var(j)%parval
                     case ("s_ved_1");  in_params_vals%sp_params(i)%s_ved_1  = mcParams%sp(i)%var(j)%parval
                     case ("s_ved_2");  in_params_vals%sp_params(i)%s_ved_2  = mcParams%sp(i)%var(j)%parval
                     case ("s_ved_3");  in_params_vals%sp_params(i)%s_ved_3  = mcParams%sp(i)%var(j)%parval
@@ -366,6 +370,7 @@ module mcmc_mod
                     case ("Entrpy_6"); in_params_vals%sp_params(i)%Entrpy_6 = mcParams%sp(i)%var(j)%parval
                     case ("Entrpy_7"); in_params_vals%sp_params(i)%Entrpy_7 = mcParams%sp(i)%var(j)%parval
                     case ("Entrpy_8"); in_params_vals%sp_params(i)%Entrpy_8 = mcParams%sp(i)%var(j)%parval
+                    case ("Entrpy_9"); in_params_vals%sp_params(i)%Entrpy_9 = mcParams%sp(i)%var(j)%parval
                     case ("Vcmax0_1"); in_params_vals%sp_params(i)%Vcmax0_1 = mcParams%sp(i)%var(j)%parval
                     case ("Vcmax0_2"); in_params_vals%sp_params(i)%Vcmax0_2 = mcParams%sp(i)%var(j)%parval
                     case ("Vcmax0_3"); in_params_vals%sp_params(i)%Vcmax0_3 = mcParams%sp(i)%var(j)%parval
@@ -374,6 +379,7 @@ module mcmc_mod
                     case ("Vcmax0_6"); in_params_vals%sp_params(i)%Vcmax0_6 = mcParams%sp(i)%var(j)%parval
                     case ("Vcmax0_7"); in_params_vals%sp_params(i)%Vcmax0_7 = mcParams%sp(i)%var(j)%parval
                     case ("Vcmax0_8"); in_params_vals%sp_params(i)%Vcmax0_8 = mcParams%sp(i)%var(j)%parval
+                    case ("Vcmax0_9"); in_params_vals%sp_params(i)%Vcmax0_9 = mcParams%sp(i)%var(j)%parval
                     case ("Q10_1");    in_params_vals%sp_params(i)%Q10_1 = mcParams%sp(i)%var(j)%parval
                     case ("Q10_2");    in_params_vals%sp_params(i)%Q10_2 = mcParams%sp(i)%var(j)%parval
                     case ("Q10_3");    in_params_vals%sp_params(i)%Q10_3 = mcParams%sp(i)%var(j)%parval
@@ -381,7 +387,8 @@ module mcmc_mod
                     case ("Q10_5");    in_params_vals%sp_params(i)%Q10_5 = mcParams%sp(i)%var(j)%parval
                     case ("Q10_6");    in_params_vals%sp_params(i)%Q10_6 = mcParams%sp(i)%var(j)%parval
                     case ("Q10_7");    in_params_vals%sp_params(i)%Q10_7 = mcParams%sp(i)%var(j)%parval
-                    case ("Q10_8");    in_params_vals%sp_params(i)%Q10_8 = mcParams%sp(i)%var(j)%parval  
+                    case ("Q10_8");    in_params_vals%sp_params(i)%Q10_8 = mcParams%sp(i)%var(j)%parval
+                    case ("Q10_9");    in_params_vals%sp_params(i)%Q10_9 = mcParams%sp(i)%var(j)%parval  
                     case ("f_rg_1");   in_params_vals%sp_params(i)%f_rg_1 = mcParams%sp(i)%var(j)%parval
                     case ("f_rg_2");   in_params_vals%sp_params(i)%f_rg_2 = mcParams%sp(i)%var(j)%parval
                     case ("f_rg_3");   in_params_vals%sp_params(i)%f_rg_3 = mcParams%sp(i)%var(j)%parval
@@ -390,6 +397,7 @@ module mcmc_mod
                     case ("f_rg_6");   in_params_vals%sp_params(i)%f_rg_6 = mcParams%sp(i)%var(j)%parval
                     case ("f_rg_7");   in_params_vals%sp_params(i)%f_rg_7 = mcParams%sp(i)%var(j)%parval
                     case ("f_rg_8");   in_params_vals%sp_params(i)%f_rg_8 = mcParams%sp(i)%var(j)%parval
+                    case ("f_rg_9");   in_params_vals%sp_params(i)%f_rg_9 = mcParams%sp(i)%var(j)%parval
                     case ("fn2r_1"); in_params_vals%sp_params(i)%fn2r_1 = mcParams%sp(i)%var(j)%parval
                     case ("fn2r_2"); in_params_vals%sp_params(i)%fn2r_2 = mcParams%sp(i)%var(j)%parval
                     case ("fn2r_3"); in_params_vals%sp_params(i)%fn2r_3 = mcParams%sp(i)%var(j)%parval
@@ -398,6 +406,7 @@ module mcmc_mod
                     case ("fn2r_6"); in_params_vals%sp_params(i)%fn2r_6 = mcParams%sp(i)%var(j)%parval
                     case ("fn2r_7"); in_params_vals%sp_params(i)%fn2r_7 = mcParams%sp(i)%var(j)%parval
                     case ("fn2r_8"); in_params_vals%sp_params(i)%fn2r_8 = mcParams%sp(i)%var(j)%parval
+                    case ("fn2r_9"); in_params_vals%sp_params(i)%fn2r_9 = mcParams%sp(i)%var(j)%parval
                     case ("s_npp_1"); in_params_vals%sp_params(i)%s_npp_1 = mcParams%sp(i)%var(j)%parval
                     case ("s_npp_2"); in_params_vals%sp_params(i)%s_npp_2 = mcParams%sp(i)%var(j)%parval
                     case ("s_npp_3"); in_params_vals%sp_params(i)%s_npp_3 = mcParams%sp(i)%var(j)%parval
@@ -415,6 +424,7 @@ module mcmc_mod
                     case ("fn2l_6"); in_params_vals%sp_params(i)%fn2l_6 = mcParams%sp(i)%var(j)%parval
                     case ("fn2l_7"); in_params_vals%sp_params(i)%fn2l_7 = mcParams%sp(i)%var(j)%parval
                     case ("fn2l_8"); in_params_vals%sp_params(i)%fn2l_8 = mcParams%sp(i)%var(j)%parval
+                    case ("fn2l_9"); in_params_vals%sp_params(i)%fn2l_9 = mcParams%sp(i)%var(j)%parval
                 end select
             end do
         end do

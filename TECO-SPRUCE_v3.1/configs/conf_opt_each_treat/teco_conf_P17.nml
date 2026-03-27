@@ -25,7 +25,7 @@
     
     ! set the input and output path and files
     inDir             = "../TECO_inputs/P17"
-    outDir            = "/mnt/d/2_shared_folder/20251209_test_code/TECO_outputs/simu_opt_params_each_treat"
+    outDir            = "../../TECO_outputs"
 
     ! input files
     climFile          = "SPRUCE_forcing.txt"

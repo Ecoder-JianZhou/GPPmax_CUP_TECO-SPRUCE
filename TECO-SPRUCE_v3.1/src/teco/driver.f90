@@ -86,42 +86,42 @@ module driver
                 st%Tpro_me = st%Tpro_me_1
                 ! 2011-2013: set 7 to pretreat
                 if(do_fixed_param) then
-                    st%Q10rh   = st%Q10rh_7
-                    st%Q10pro  = st%Q10pro_7                        
-                    st%Tpro_me = st%Tpro_me_7 ! just one 
+                    st%Q10rh   = st%Q10rh_9
+                    st%Q10pro  = st%Q10pro_9                        
+                    st%Tpro_me = st%Tpro_me_9 ! just one 
                     ! Tref_rh    = st%Tref_rh_7
                     ! def_s_rh = st%Tref_rh_7
                     do i = 1, 3
-                        st%sp(i)%s_vea = st%sp(i)%s_vea_7
+                        st%sp(i)%s_vea = st%sp(i)%s_vea_9
                         ! st%sp(i)%s_ved = st%sp(i)%s_ved_1
-                        st%sp(i)%s_jea = st%sp(i)%s_vea_7
+                        st%sp(i)%s_jea = st%sp(i)%s_vea_9
                         ! st%sp(i)%s_jed = st%sp(i)%s_ved_1
-                        st%sp(i)%Entrpy = st%sp(i)%Entrpy_7
-                        st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_7
-                        st%sp(i)%Q10    = st%sp(i)%Q10_7
-                        st%sp(i)%f_rg   = st%sp(i)%f_rg_7
-                        st%sp(i)%fn2r   = st%sp(i)%fn2r_1
-                        st%sp(i)%fn2l   = st%sp(i)%fn2l_1
+                        st%sp(i)%Entrpy = st%sp(i)%Entrpy_9
+                        st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_9
+                        st%sp(i)%Q10    = st%sp(i)%Q10_9
+                        st%sp(i)%f_rg   = st%sp(i)%f_rg_9
+                        st%sp(i)%fn2r   = st%sp(i)%fn2r_9
+                        st%sp(i)%fn2l   = st%sp(i)%fn2l_9
                         def_s_npp(i)    = st%sp(i)%s_npp_9
                     enddo
                 else
                 if (iyear < 2014) then
-                    st%Q10rh   = st%Q10rh_7
-                    st%Q10pro  = st%Q10pro_7                        
-                    st%Tpro_me = st%Tpro_me_7 ! just one 
+                    st%Q10rh   = st%Q10rh_9
+                    st%Q10pro  = st%Q10pro_9                        
+                    st%Tpro_me = st%Tpro_me_9 ! just one 
                     ! Tref_rh    = st%Tref_rh_7
                     ! def_s_rh = st%Tref_rh_7
                     do i = 1, 3
-                        st%sp(i)%s_vea = st%sp(i)%s_vea_7
+                        st%sp(i)%s_vea = st%sp(i)%s_vea_9
                         ! st%sp(i)%s_ved = st%sp(i)%s_ved_1
-                        st%sp(i)%s_jea = st%sp(i)%s_vea_7
+                        st%sp(i)%s_jea = st%sp(i)%s_vea_9
                         ! st%sp(i)%s_jed = st%sp(i)%s_ved_1
-                        st%sp(i)%Entrpy = st%sp(i)%Entrpy_7
-                        st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_7
-                        st%sp(i)%Q10    = st%sp(i)%Q10_7
-                        st%sp(i)%f_rg   = st%sp(i)%f_rg_7
-                        st%sp(i)%fn2r   = st%sp(i)%fn2r_1
-                        st%sp(i)%fn2l   = st%sp(i)%fn2l_1
+                        st%sp(i)%Entrpy = st%sp(i)%Entrpy_9
+                        st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_9
+                        st%sp(i)%Q10    = st%sp(i)%Q10_9
+                        st%sp(i)%f_rg   = st%sp(i)%f_rg_9
+                        st%sp(i)%fn2r   = st%sp(i)%fn2r_9
+                        st%sp(i)%fn2l   = st%sp(i)%fn2l_9
                         def_s_npp(i)    = st%sp(i)%s_npp_9
                     enddo
                     ! def_s_npp(1) = 1.0
@@ -134,14 +134,14 @@ module driver
                     ! endif
                 else
                     ! tree
-                    st%sp(1)%s_vea  = st%sp(1)%s_vea_1
-                    ! st%sp(i)%s_ved = st%sp(i)%s_ved_1
-                    st%sp(1)%s_jea  = st%sp(1)%s_vea_1
-                    ! st%sp(i)%s_jed = st%sp(i)%s_ved_1
-                    st%sp(1)%Entrpy = st%sp(1)%Entrpy_1
-                    st%sp(1)%Vcmax0 = st%sp(1)%Vcmax0_1
-                    st%sp(1)%Q10    = st%sp(1)%Q10_1
-                    st%sp(1)%f_rg   = st%sp(1)%f_rg_1
+                    ! st%sp(1)%s_vea  = st%sp(1)%s_vea_1
+                    ! ! st%sp(i)%s_ved = st%sp(i)%s_ved_1
+                    ! st%sp(1)%s_jea  = st%sp(1)%s_vea_1
+                    ! ! st%sp(i)%s_jed = st%sp(i)%s_ved_1
+                    ! st%sp(1)%Entrpy = st%sp(1)%Entrpy_1
+                    ! st%sp(1)%Vcmax0 = st%sp(1)%Vcmax0_1
+                    ! st%sp(1)%Q10    = st%sp(1)%Q10_1
+                    ! st%sp(1)%f_rg   = st%sp(1)%f_rg_1
                     def_s_npp(1)    = 1.0
 
                     ! st%Q10rh  = st%Q10rh_1
@@ -158,7 +158,7 @@ module driver
                         st%sp(1)%fn2l = st%sp(1)%fn2l_1
                         def_s_npp(1)  = st%sp(1)%s_npp_1
                         ! def_s_rh = st%Tref_rh_1
-                        do i = 2,3
+                        do i = 1,3
                             st%sp(i)%s_vea = st%sp(i)%s_vea_1
                             ! st%sp(i)%s_ved = st%sp(i)%s_ved_1
                             st%sp(i)%s_jea = st%sp(i)%s_vea_1
@@ -181,7 +181,7 @@ module driver
                         st%sp(1)%fn2r = st%sp(1)%fn2r_2
                         st%sp(1)%fn2l = st%sp(1)%fn2l_2
                         def_s_npp(1)  = st%sp(1)%s_npp_2
-                        do i = 2,3
+                        do i = 1,3
                             st%sp(i)%s_vea = st%sp(i)%s_vea_2
                             ! st%sp(i)%s_ved = st%sp(i)%s_ved_2
                             st%sp(i)%s_jea = st%sp(i)%s_vea_2
@@ -250,7 +250,7 @@ module driver
                         st%sp(1)%fn2r = st%sp(1)%fn2r_5
                         st%sp(1)%fn2l = st%sp(1)%fn2l_5
                         def_s_npp(1)  = st%sp(1)%s_npp_5
-                        do i = 2,3
+                        do i = 1,3
                             st%sp(i)%s_vea = st%sp(i)%s_vea_5
                             ! st%sp(i)%s_ved = st%sp(i)%s_ved_5
                             st%sp(i)%s_jea = st%sp(i)%s_vea_5
@@ -287,24 +287,24 @@ module driver
                             def_s_npp(i)    = st%sp(i)%s_npp_6
                         enddo
                     elseif (iyear .eq. 2020 .and. iday .eq. 1 .and. ihour .eq. 0) then
-                        st%Q10rh = st%Q10rh_6 ! def_Q10rh !
-                        st%Q10pro = st%Q10pro_6 ! def_Q10pro !
-                        st%Tpro_me = st%Tpro_me_6 !def_Tpro_me !
+                        st%Q10rh = st%Q10rh_7 ! def_Q10rh !
+                        st%Q10pro = st%Q10pro_7 ! def_Q10pro !
+                        st%Tpro_me = st%Tpro_me_7 !def_Tpro_me !
                         ! Tref_rh = st%Tref_rh_6 ! 10.0 
                         ! def_s_rh = st%Tref_rh_6
                         ! species
                         st%sp(1)%fn2r = st%sp(1)%fn2r_7
                         st%sp(1)%fn2l = st%sp(1)%fn2l_7
                         def_s_npp(1)  = st%sp(1)%s_npp_7
-                        do i = 2,3
-                            st%sp(i)%s_vea = st%sp(i)%s_vea_6 ! def_s_vea(i)    !
+                        do i = 1,3
+                            st%sp(i)%s_vea = st%sp(i)%s_vea_7 ! def_s_vea(i)    !
                             ! st%sp(i)%s_ved = st%sp(i)%s_ved_7
-                            st%sp(i)%s_jea = st%sp(i)%s_vea_6 ! def_s_vea(i) !
+                            st%sp(i)%s_jea = st%sp(i)%s_vea_7 ! def_s_vea(i) !
                             ! st%sp(i)%s_jed = st%sp(i)%s_ved_7
-                            st%sp(i)%Entrpy = st%sp(i)%Entrpy_6 ! def_Entrpy(i) !
-                            st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_6 ! def_Vcmax0(i) !
-                            st%sp(i)%Q10    = st%sp(i)%Q10_6    ! def_Q10(i)  !
-                            st%sp(i)%f_rg   = st%sp(i)%f_rg_6   ! 0.5 !
+                            st%sp(i)%Entrpy = st%sp(i)%Entrpy_7 ! def_Entrpy(i) !
+                            st%sp(i)%Vcmax0 = st%sp(i)%Vcmax0_7 ! def_Vcmax0(i) !
+                            st%sp(i)%Q10    = st%sp(i)%Q10_7    ! def_Q10(i)  !
+                            st%sp(i)%f_rg   = st%sp(i)%f_rg_7   ! 0.5 !
                             st%sp(i)%fn2r   = st%sp(i)%fn2r_7
                             st%sp(i)%fn2l   = st%sp(i)%fn2l_7
                             def_s_npp(i)    = st%sp(i)%s_npp_7
@@ -319,7 +319,7 @@ module driver
                         st%sp(1)%fn2r = st%sp(1)%fn2r_8
                         st%sp(1)%fn2l = st%sp(1)%fn2l_8
                         def_s_npp(1)  = st%sp(1)%s_npp_8
-                        do i = 2,3
+                        do i = 1,3
                             st%sp(i)%s_vea = st%sp(i)%s_vea_8
                             ! st%sp(i)%s_ved = st%sp(i)%s_ved_8
                             st%sp(i)%s_jea = st%sp(i)%s_vea_8
