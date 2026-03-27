@@ -35,3 +35,13 @@ do i = 2,3
     st%sp(i)%fn2l   = st%sp(i)%fn2l_7
     def_s_npp(i)    = st%sp(i)%s_npp_7
 enddo
+
+! tree
+st%sp(1)%s_vea  = st%sp(1)%s_vea_1
+! st%sp(i)%s_ved = st%sp(i)%s_ved_1
+st%sp(1)%s_jea  = st%sp(1)%s_vea_1
+! st%sp(i)%s_jed = st%sp(i)%s_ved_1
+st%sp(1)%Entrpy = st%sp(1)%Entrpy_1
+st%sp(1)%Vcmax0 = st%sp(1)%Vcmax0_1
+st%sp(1)%Q10    = st%sp(1)%Q10_1
+st%sp(1)%f_rg   = st%sp(1)%f_rg_1
