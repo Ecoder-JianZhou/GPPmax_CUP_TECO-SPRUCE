@@ -1,3 +1,5 @@
+** MCMC parameter conf not revised **  
+
 # TECO-SPRUCE_v3.1
 1. build TECO-SPRUCE
    make sure the configs/env.nml has the correct settings about gfortran
