@@ -1,4 +1,4 @@
-This code is used to study the carbon budgets of 10 treatments (+0 , +2.25, +4.5 , +6.75, +9 ℃) in the SPRUCE project, which is the manuscript titled ***"The fate of peatland carbon interactively determined by elevated carbon dioxide and warming."*** 
+This code is used to study the carbon budgets of 10 treatments (+0 , +2.25, +4.5 , +6.75, +9 ℃) in the SPRUCE project, which is the manuscript titled ***"Elevated CO2 shifts the dominant control of peatland productivity from physiology to phenology under warming."*** 
 
 _This code was wrotten in Fortran and is intended to run in a Linux Environment (also in WSL in Windows). When running it on a MacBook with an Apple M-series chip, slight differences may occur due to differences in floating-point handling._  
 
